@@ -10,3 +10,13 @@ Feature: Demo Feature
     Examples:
         | TestID | SearchItem| ExpectedURL |
         | Demo_Tc001 | wdio  | https://webdriver.io/ |
+    
+    
+    @demo
+    Scenario Outline: This is a demo feature for selectors
+    Given i am on webpage
+    When i enter <username> and <password>
+    Then i See the header <heading>
+    Examples:
+    |username| password|heading|
+    |revanth| Rev@123|Login|

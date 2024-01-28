@@ -31,7 +31,9 @@ export const config: Options.Testrunner = {
     // will be called from there.
     //
     specs: [
+    //    `${process.cwd()}/test/features/**/*.feature`
        `${process.cwd()}/test/features/**/*.feature`
+
     ],
     // Patterns to exclude.
     exclude: [
